@@ -1,0 +1,7 @@
+# GeometryTestApp
+
+SwiftUIのGeometryReaderの挙動やセーフエリアについて実験できる簡単なアプリ
+どんな端末でも同じ挙動をするため、このアプリで実験しつつ、一緒にソースコードを見れば、
+どんな端末にも対応したViewを作成する足掛かりに。
+
+MainViewのMARK部分のコメントアウトを切り替えると、セーフエリアとGeometryReaderの関係がわかります。
