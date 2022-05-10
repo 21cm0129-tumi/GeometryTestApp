@@ -1,16 +1,31 @@
 //
 //  ContentView.swift
-//  GeometryTestApp
+//  GeometryTest
 //
-//  Created by cmStudent on 2022/05/10.
+//  Created by cmStudent on 2022/05/06.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    var viewModel : MainViewModel = MainViewModel()
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        GeometryReader { geometry in
+            let maxWidth: CGFloat = geometry.frame(in: .local).maxX
+            let maxHeight: CGFloat = geometry.frame(in: .local).maxY
+            
+//            GeometryView2()
+//                .frame(width: maxWidth * 0.5, height: maxHeight * 0.5)
+            
+            MainView(maxWidth: maxWidth, maxHeight: maxHeight)
+            //どんな端末でも対応できるMainView
+            
+        }
+        
     }
 }
 
