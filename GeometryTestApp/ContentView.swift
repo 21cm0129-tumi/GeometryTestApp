@@ -17,9 +17,7 @@ struct ContentView: View {
         GeometryReader { geometry in
             let maxWidth: CGFloat = geometry.frame(in: .local).maxX
             let maxHeight: CGFloat = geometry.frame(in: .local).maxY
-            
-//            GeometryView2()
-//                .frame(width: maxWidth * 0.5, height: maxHeight * 0.5)
+
             
             MainView(maxWidth: maxWidth, maxHeight: maxHeight)
             //どんな端末でも対応できるMainView

@@ -17,20 +17,25 @@ struct MainView: View {
     @State private var height : Double = 100
     
     var body: some View {
+ 
         
+//MARK:          コメントアウトを解いていくとセーフエリアとGeometryReaderの関係がわかる
+//      その１
         GeometryView(rectangleText: "画面いっぱいのしかく")
             .foregroundColor(.gray)
             .edgesIgnoringSafeArea(.all)
             .frame(width: width, height: height)
-        
-        GeometryView(rectangleText: "下がちょっと足りないしかく")
-            .foregroundColor(.blue)
-            .frame(width: width, height: height)
-            .edgesIgnoringSafeArea(.all)
-        
-        GeometryView(rectangleText: "上と下がちょっとずつ足りないしかく")
-            .foregroundColor(.red)
-            .frame(width: width, height: height)
+//       その２
+//        GeometryView(rectangleText: "下がちょっと足りないしかく")
+//            .foregroundColor(.blue)
+//            .frame(width: width, height: height)
+//            .edgesIgnoringSafeArea(.all)
+//
+//
+//      その３
+//        GeometryView(rectangleText: "上と下がちょっとずつ足りないしかく")
+//            .foregroundColor(.red)
+//            .frame(width: width, height: height)
         
         
         
